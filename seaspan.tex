@@ -1,8 +1,8 @@
 % Welcome to the simple Undergraduate Complexity Research CV-resume template!
 % Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
 
-\documentclass[letterpaper,11pt]{article}
-
+\documentclass[letterpaper,9pt]{article}
+\usepackage[letterpaper, bottom=1cm]{geometry}  % Adjust "1cm" as needed
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -22,22 +22,20 @@
 \pagestyle{fancy}
 \fancyhf{} 
 \fancyfoot{}
-\setlength{\footskip}{10pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\oddsidemargin}{-0.3in}
 \addtolength{\evensidemargin}{0.0in}
-\addtolength{\textwidth}{0.0in}
-\addtolength{\topmargin}{0.0in}
-\addtolength{\textheight}{0.0in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.3in}
 
 
 \urlstyle{same}
 
 %\raggedbottom
 \setlength{\tabcolsep}{0in}
-
 \titleformat{\section}{
   \it\vspace{-10pt}
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
@@ -59,7 +57,7 @@
 % }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.7\textwidth}@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & \textbf{#2} \\
       \textit{\small #3} & \textit{\small #4} \\
@@ -70,16 +68,15 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1pt}}
+\newcommand{\resumeItemListStart}{\vspace{2pt}\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 \begin{document}
 
 
  %-----------BIO-----------
-\begin{center}
-  \vspace{0pt}
+ \begin{center}
     {\LARGE Shashwat Suri} \\ \vspace{-5pt}
     \begin{multicols}{2}
     \begin{flushleft}
@@ -96,17 +93,11 @@
     \end{multicols}
 \end{center}
 
-
-
 \input{modules/seaspan/skills.tex}
 \input{modules/seaspan/work.tex}
 \input{modules/seaspan/education.tex}
 \input{modules/seaspan/publications.tex}
-
-
-
-
-
+\input{modules/seaspan/projects.tex}
 
 % \section{Other Interests}
 % % Also an optional section, for any hobbies, sports, artistic and musical pursuits, etc. that you would like to include. You can include as many or as few as you like: delete or add as needed. 
