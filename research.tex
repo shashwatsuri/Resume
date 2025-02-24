@@ -1,8 +1,5 @@
-% Welcome to the simple Undergraduate Complexity Research CV-resume template!
-% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
-
-\documentclass[letterpaper,11pt]{article}
-
+\documentclass[letterpaper,9pt]{article}
+\usepackage[letterpaper, bottom=1cm]{geometry}  % Adjust "1cm" as needed
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -22,25 +19,23 @@
 \pagestyle{fancy}
 \fancyhf{} 
 \fancyfoot{}
-\setlength{\footskip}{10pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\oddsidemargin}{-0.4in}
 \addtolength{\evensidemargin}{0.0in}
-\addtolength{\textwidth}{0.0in}
-\addtolength{\topmargin}{0.0in}
-\addtolength{\textheight}{0.0in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{0.3in}
 
 
 \urlstyle{same}
 
 %\raggedbottom
 \setlength{\tabcolsep}{0in}
-
 \titleformat{\section}{
-  \it\vspace{2pt}
-}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+  \it\vspace{-14pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-2pt}]
 
 \pdfgentounicode=1
 
@@ -59,7 +54,7 @@
 % }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.7\textwidth}@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & \textbf{#2} \\
       \textit{\small #3} & \textit{\small #4} \\
@@ -70,16 +65,16 @@
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1pt}}
+\newcommand{\resumeItemListStart}{\vspace{2pt}\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 \begin{document}
 
 
  %-----------BIO-----------
-\begin{center}
-    {\LARGE Shashwat Suri} \\ \vspace{0pt}
+ \begin{center}
+    {\LARGE Shashwat Suri} \\ \vspace{-5pt}
     \begin{multicols}{2}
     \begin{flushleft}
     \small{Vancouver, British Columbia, Canada} \\
@@ -88,24 +83,18 @@
     
     \begin{flushright}
 % this could be LinkedIn, GitHub, or a personal website or social media account (if used for professional purposes)
-    \href{{url for any websites you want to link}} \large{shashwatsuri.github.io} \\
+    \href{{shashwatsuri.github.io}} \large{shashwatsuri.github.io} \\
 % please ensure your email address is one you check
-    \href{mailto:{your email adress}} \large{shashwatsuri98@gmail.com}
+    \href{mailto:{shashwatsuri98@gmail.com}} \large{shashwatsuri98@gmail.com}
     \end{flushright}
     \end{multicols}
 \end{center}
 
-
-\input{modules/education.tex}
-
-\input{modules/publications.tex}
-
-\input{modules/projects.tex}
-
-\input{modules/work.tex}
-
-\input{modules/skills.tex}
-
+\input{modules/seaspan/skills.tex}
+\input{modules/seaspan/work.tex}
+\input{modules/seaspan/education.tex}
+\input{modules/seaspan/publications.tex}
+\input{modules/seaspan/projects.tex}
 
 % \section{Other Interests}
 % % Also an optional section, for any hobbies, sports, artistic and musical pursuits, etc. that you would like to include. You can include as many or as few as you like: delete or add as needed. 
